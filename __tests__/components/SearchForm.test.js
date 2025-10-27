@@ -174,7 +174,7 @@ describe('SearchForm Component', () => {
     const { getByLabelText, getByRole, user } = renderWithProviders(<SearchForm />);
     const copyrightConfirmedInput = getByLabelText(/^confirmed/i);
     expect(copyrightConfirmedInput).not.toBeChecked();
-    await user.click(copyrightConfirmedInput);
+    await usesr.click(copyrightConfirmedInput);
     expect(copyrightConfirmedInput).toBeChecked();
     const searchBtn = getByRole('button', { name: /search/i });
     expect(searchBtn).toBeEnabled();
